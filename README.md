@@ -63,8 +63,9 @@ othmansamih-rag-gemma3/
     ```
     
 3. **Set up environment variables:**
-    - Copy `.env_example` to `.env` and update it with your API keys.
-    
+
+    - Copy `.env_example` to `.env` and update it with your API keys.    
+
     ```
     PINECONE_API_KEY="YOUR_PINECONE_API_KEY"
     HUGGINGFACEHUB_API_TOKEN="YOUR_HUGGINGFACEHUB_API_TOKEN"
