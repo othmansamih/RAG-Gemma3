@@ -100,7 +100,9 @@ llm:
   temperature: 0.1
   device_map: "cpu"
   max_new_tokens: 256
-  system_prompt: "You are a helpful AI assistant."
+  system_prompt: >
+    You are a helpful AI assistant. Respond to the user's prompt based on the retrieved documents.
+    If the retrieved documents are not relevant, reply with: 'Sorry, I don't have enough information about this.'
 
 ```
 
