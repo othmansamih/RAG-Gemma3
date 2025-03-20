@@ -1,0 +1,32 @@
+directories:
+  documents_dir: "C:/Users/Osamih/Desktop/VS Code Projects/RAG-Gemma3/data/documents"
+  uploaded_documents_dir: "C:/Users/Osamih/Desktop/VS Code Projects/RAG-Gemma3/data/uploaded_documents"
+
+vectordb_config:
+  text_splitter:
+    chunk_size: 1500
+    chunk_overlap: 250
+  
+  index:
+    index_name: "rag-gemma3"
+    cloud: "aws"
+    region: "us-east-1"
+  
+  retrieved_docs:
+    k: 2
+
+embeddings:
+  embed_model_id: "BAAI/bge-small-en-v1.5"
+
+llm:
+  gen_model_id: "google/gemma-3-1b-it"
+  temperature: 0.1
+  device_map: "cpu"
+  max_new_tokens: 256
+  system_prompt: >
+    You are a helpful AI assistant. Respond to the user's prompt based on the retrieved documents.
+    If the retrieved documents are not relevant, reply with: 'Sorry, I don't have enough information about this.'
+
+api_url:
+  llm_api_url: "http://127.0.0.1:5000/generate"
+  embed_api_url: "http://127.0.0.1:5000/embed"

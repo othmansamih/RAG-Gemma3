@@ -1,0 +1,11 @@
+gradio
+pypdf
+langchain
+langchain-community
+langchain-pinecone
+langchain-huggingface
+pinecone[grpc]
+accelerate
+torch
+flask
+git+https://github.com/huggingface/transformers@v4.49.0-Gemma-3
