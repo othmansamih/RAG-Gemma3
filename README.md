@@ -66,7 +66,7 @@ othmansamih-rag-gemma3/
 
     - Copy `.env_example` to `.env` and update it with your API keys.    
 
-    ```
+    ```bash
     PINECONE_API_KEY="YOUR_PINECONE_API_KEY"
     HUGGINGFACEHUB_API_TOKEN="YOUR_HUGGINGFACEHUB_API_TOKEN"
     ```
