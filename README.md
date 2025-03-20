@@ -42,7 +42,7 @@ othmansamih-rag-gemma3/
 
 ### Prerequisites
 
-- Python 3.8+
+- Python 3.9+
 - `pip` package manager
 - Pinecone API Key
 - Hugging Face API Token
